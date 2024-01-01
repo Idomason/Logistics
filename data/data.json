@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "heading": "Experience seamless transactions with our integrated wallet",
+    "paragraph": "Our integrated payment gateway supports multiple currencies, allowing you to manage your wallet and transactions your way."
+  },
+
+  {
+    "id": 2,
+    "heading": "Sender or a Driver - You Choose!",
+    "paragraph": "Switch your profile between being a customer and a driver. This means you can send shipments when you need to and switch to earning money as a driver when you want to, all within the same app. It’s all about giving you the power of choice!"
+  },
+
+  {
+    "id": 3,
+    "heading": "Save money with our promo codes and subscription plans",
+    "paragraph": "ShipPack offers a range of promo codes and subscription plans to help you save money on your shipments."
+  },
+
+  {
+    "id": 4,
+    "heading": "A PIN for Your Peace of Mind.",
+    "paragraph": "Worried about the safety of your shipment? Get a unique PIN when you place a shipment order. Our unique PIN system adds a barrier only the intended recipient can cross."
+  },
+
+  {
+    "id": 5,
+    "heading": "Earn rewards by referring new customers and completing shipments",
+    "paragraph": "You can earn rewards by referring new customers to ShipPack through our affiliate program or by completing shipments as a shipper. You decide."
+  }
+]
