@@ -3,7 +3,12 @@
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
-const faqs = [
+interface AccordionData {
+  [key: string]: any;
+}
+// type PropDataType = AccordionData[];
+
+const faqs: AccordionData = [
   {
     title: 'What is ShipPack?',
     text: 'ShipPack is your all-in-one logistics solution, streamlining shipping, tracking, and much more, living up to the tagline "One Place, All Logistics."',
@@ -61,22 +66,17 @@ export default function Questions() {
   );
 }
 
-function Accordion({ data }) {
+function Accordion({ data }: AccordionData) {
   return (
     <div className='accordion'>
-      {data.map((el, i) => (
-        <AccordionItem
-          num={i + 1}
-          title={el.title}
-          text={el.text}
-          key={el.title}
-        />
+      {data.map((el: AccordionData) => (
+        <AccordionItem title={el.title} text={el.text} key={el.title} />
       ))}
     </div>
   );
 }
 
-function AccordionItem({ num, title, text }) {
+function AccordionItem({ title, text }: AccordionData) {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleToggle() {
