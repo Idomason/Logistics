@@ -62,40 +62,80 @@ export default function Payment() {
           onClick={handleNext}
         />
       </div>
-      <h1 className='text-xl md:text-4xl md:self-start md:mb-4 md:w-1/2 md:leading-normal font-bold py-4 text-black text-center'>
+      <h1 className='text-xl md:text-4xl md:text-left md:self-start md:mb-4 md:w-1/2 md:leading-normal font-bold py-4 text-black text-center'>
         Everything you need, less of what you do not.
       </h1>
-      <div className='w-full md:flex justify-between'>
-        <div className='text-gray-500 hidden md:block'>
+      <div className='w-full md:flex md:justify-between items-start'>
+        <div className='text-gray-500 hidden md:block w-1/2'>
           <div className='flex'>
-            <hr className='p-[2px] mr-2 bg-primary h-14' />
-            <button className='hover:text-gray-800'>Wallet</button>
+            <hr
+              className={
+                step === 1
+                  ? 'p-[2px] mr-2 bg-primary h-14'
+                  : 'bg-gray-200 p-[2px] mr-2 h-14'
+              }
+            />
+            <button className='hover:text-gray-800' onClick={() => setStep(1)}>
+              Wallet
+            </button>
           </div>
           <div className='flex'>
-            <hr className='p-[2px] mr-2 bg-gray-200 h-14' />
-            <button className='hover:text-gray-800'>Sender or Driver</button>
+            <hr
+              className={
+                step === 2
+                  ? 'p-[2px] mr-2 bg-primary h-14'
+                  : 'bg-gray-200 p-[2px] mr-2 h-14'
+              }
+            />
+            <button className='hover:text-gray-800' onClick={() => setStep(2)}>
+              Sender or Driver
+            </button>
           </div>
           <div className='flex'>
-            <hr className='p-[2px] mr-2 bg-gray-200 h-14' />
-            <button className='hover:text-gray-800'>Promo & Plans</button>
+            <hr
+              className={
+                step === 3
+                  ? 'p-[2px] mr-2 bg-primary h-14'
+                  : 'bg-gray-200 p-[2px] mr-2 h-14'
+              }
+            />
+            <button className='hover:text-gray-800' onClick={() => setStep(3)}>
+              Promo & Plans
+            </button>
           </div>
           <div className='flex'>
-            <hr className='p-[2px] mr-2 bg-gray-200 h-14' />
-            <button className='hover:text-gray-800'>Shipment Pin</button>
+            <hr
+              className={
+                step === 4
+                  ? 'p-[2px] mr-2 bg-primary h-14'
+                  : 'bg-gray-200 p-[2px] mr-2 h-14'
+              }
+            />
+            <button className='hover:text-gray-800' onClick={() => setStep(4)}>
+              Shipment Pin
+            </button>
           </div>
           <div className='flex'>
-            <hr className='p-[2px] mr-2 bg-gray-200 h-14' />
-            <button className='hover:text-gray-800'>Referral</button>
+            <hr
+              className={
+                step === 5
+                  ? 'p-[2px] mr-2 bg-primary h-14'
+                  : 'bg-gray-200 p-[2px] mr-2 h-14'
+              }
+            />
+            <button className='hover:text-gray-800' onClick={() => setStep(5)}>
+              Referral
+            </button>
           </div>
         </div>
         {slide.map((slideData) => (
           <div key={slideData.id}>
-            <div className='w-full flex flex-col items-center md:items-start py-6 px-6 leading-relaxed bg-gray-200 md:bg-transparent text-gray-600  rounded-3xl'>
-              <h2 className='font-bold text-xlg text-black py-3 md:text-3xl md:w-3/4 md:leading-normal text-center'>
+            <div className='w-full flex flex-col items-center py-6 px-6 leading-relaxed bg-gray-200 md:bg-transparent text-gray-600  rounded-3xl'>
+              <h2 className='font-bold text-xlg text-black py-3 md:text-3xl md:text-left md:w-3/4 md:leading-normal text-center'>
                 {slideData.heading}
               </h2>
               <p className='text-sm pb-6 md:w-3/4'>{slideData.paragraph}</p>
-              <button className='py-2 px-8 bg-primary text-white max-w-max rounded-lg'>
+              <button className='py-2 px-8 bg-primary text-white max-w-max rounded-lg self-center right-0'>
                 Learn More
               </button>
             </div>
