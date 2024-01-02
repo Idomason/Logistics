@@ -86,13 +86,13 @@ function AccordionItem({ title, text }: AccordionData) {
   return (
     <div
       className={`item ${
-        isOpen ? 'open' : ''
+        isOpen ? 'bg-blue-900' : ''
       } cursor-pointer  mb-10 border-b-2 border-b-blue-500 hover:bg-blue-900 p-3 rounded-t-3xl`}
       onClick={handleToggle}
     >
       <div className='flex justify-between'>
         <p className='mb-2'>{title}</p>
-        <p className='icon'>
+        <p>
           {isOpen ? (
             <ChevronDown className='cursor-pointer' />
           ) : (
@@ -100,7 +100,7 @@ function AccordionItem({ title, text }: AccordionData) {
           )}
         </p>
       </div>
-      <div className='text-sm'>{isOpen && <div>{text}</div>}</div>
+      <div>{isOpen && <div className='text-sm bg-blue-900'>{text}</div>}</div>
     </div>
   );
 }
