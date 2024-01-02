@@ -40,15 +40,13 @@ export default function Hero() {
             Download on Google Play
           </a>
         </div>
-        <div className='w-screen px-48 px-auto flex items-center justify-center'>
-          <Image
-            className='w-full'
-            src='/home-hero.svg'
-            width={800}
-            height={500}
-            alt='Hero Image'
-          />
-        </div>
+        <Image
+          className='w-full'
+          src='/home-hero.svg'
+          width={200}
+          height={200}
+          alt='Hero Image'
+        />
       </div>
     </section>
   );

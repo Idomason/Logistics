@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className=' bg-primary flex justify-between px-6 py-7 lg:pb-40 md:pb-35 pb-20'>
+    <header className=' bg-primary flex items-center justify-between px-6 py-7 lg:pb-40 md:pb-35 pb-20'>
       <div className='flex items-center justify-between space-x-16'>
         <div>
           <Image
@@ -28,7 +28,7 @@ export default function Header() {
         </ul>
       </div>
 
-      <div className='self-center md:block hidden'>
+      <div className='md:block hidden'>
         <button className='inline-block rounded-md text-sm text-primary bg-white py-3 px-12'>
           Login
         </button>

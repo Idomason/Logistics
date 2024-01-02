@@ -11,7 +11,7 @@ export default function SellingPoint() {
         meets excellence, we deliver more than packages; we deliver satisfaction
         on every journey.
       </p>
-      <div className='py-5 text-xs md:flex items-center gap-4'>
+      <div className='py-5 text-sm md:flex items-center gap-4'>
         <div className='flex flex-col lg:flex-row items-center justify-center py-10 lg:gap-2'>
           <Image
             className='p-3 bg-gray-50 rounded-md'
