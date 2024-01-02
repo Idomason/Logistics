@@ -65,7 +65,7 @@ export default function Payment() {
       <h1 className='text-xl md:text-4xl md:self-start md:mb-4 md:w-1/2 md:leading-normal font-bold py-4 text-black'>
         Everything you need, less of what you do not.
       </h1>
-      <div className='w-full hidden md:flex justify-between'>
+      <div className='w-full md:flex justify-between'>
         <div className='text-gray-500 hidden md:block'>
           <div className='flex'>
             <hr className='p-[2px] mr-2 bg-primary h-14' />
