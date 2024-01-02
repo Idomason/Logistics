@@ -29,27 +29,27 @@ export default function Payment() {
         <RectangleHorizontal
           className={` ${
             step === 1 ? 'bg-primary' : 'bg-slate-400 '
-          } h-3 px-8 rounded-lg cursor-pointer`}
+          } h-2 px-4 md:h-3 md:px-8 rounded-lg cursor-pointer`}
         />
         <RectangleHorizontal
           className={` ${
             step === 2 ? 'bg-primary' : 'bg-slate-400 '
-          } h-3 px-8 rounded-lg cursor-pointer`}
+          } h-2 px-4 md:h-3 md:px-8 rounded-lg cursor-pointer`}
         />
         <RectangleHorizontal
           className={` ${
             step === 3 ? 'bg-primary' : 'bg-slate-400 '
-          } h-3 px-8 rounded-lg cursor-pointer`}
+          } h-2 px-4 md:h-3 md:px-8 rounded-lg cursor-pointer`}
         />
         <RectangleHorizontal
           className={` ${
             step === 4 ? 'bg-primary' : 'bg-slate-400 '
-          } h-3 px-8 rounded-lg cursor-pointer`}
+          } h-2 px-4 md:h-3 md:px-8 rounded-lg cursor-pointer`}
         />
         <RectangleHorizontal
           className={` ${
             step === 5 ? 'bg-primary' : 'bg-slate-400 '
-          } h-3 px-8 rounded-lg cursor-pointer`}
+          } h-2 px-4 md:h-3 md:px-8 rounded-lg cursor-pointer`}
         />
       </div>
       <div className='flex gap-2 py-6 md:hidden'>
@@ -62,7 +62,7 @@ export default function Payment() {
           onClick={handleNext}
         />
       </div>
-      <h1 className='text-xl md:text-4xl md:self-start md:mb-4 md:w-1/2 md:leading-normal font-bold py-4 text-black'>
+      <h1 className='text-xl md:text-4xl md:self-start md:mb-4 md:w-1/2 md:leading-normal font-bold py-4 text-black text-center'>
         Everything you need, less of what you do not.
       </h1>
       <div className='w-full md:flex justify-between'>
@@ -91,7 +91,7 @@ export default function Payment() {
         {slide.map((slideData) => (
           <div key={slideData.id}>
             <div className='w-full flex flex-col items-center md:items-start py-6 px-6 leading-relaxed bg-gray-200 md:bg-transparent text-gray-600  rounded-3xl'>
-              <h2 className='font-bold text-xlg text-black py-3 md:text-3xl md:w-3/4 md:leading-normal '>
+              <h2 className='font-bold text-xlg text-black py-3 md:text-3xl md:w-3/4 md:leading-normal text-center'>
                 {slideData.heading}
               </h2>
               <p className='text-sm pb-6 md:w-3/4'>{slideData.paragraph}</p>
