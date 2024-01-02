@@ -130,8 +130,8 @@ export default function Payment() {
         </div>
         {slide.map((slideData) => (
           <div key={slideData.id}>
-            <div className='flex flex-col items-center md:items-start py-6 md:py-0 px-6 leading-relaxed bg-gray-200 md:bg-transparent text-gray-600  rounded-3xl md:text-left'>
-              <h2 className='font-bold text-xlg text-black py-3 md:text-3xl md:text-left md:leading-normal text-center'>
+            <div className='flex flex-col items-center md:items-start py-6 md:py-0 px-6 leading-relaxed bg-gray-200 md:bg-transparent text-gray-600 rounded-3xl md:text-left'>
+              <h2 className='font-bold text-xlg text-black py-3 md:text-3xl md:text-left md:leading-snug text-center'>
                 {slideData.heading}
               </h2>
               <p className='text-sm pb-6'>{slideData.paragraph}</p>
