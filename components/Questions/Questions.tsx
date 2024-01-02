@@ -87,19 +87,20 @@ function AccordionItem({ title, text }: AccordionData) {
     <div
       className={`item ${
         isOpen ? 'open' : ''
-      } flex justify-between mb-10 border-b-2 border-b-blue-500`}
+      } cursor-pointer  mb-10 border-b-2 border-b-blue-500 hover:bg-blue-900 p-3 rounded-t-3xl`}
       onClick={handleToggle}
     >
-      <p className='title'>{title}</p>
-      <p className='icon'>
-        {isOpen ? (
-          <ChevronDown className='cursor-pointer' />
-        ) : (
-          <ChevronRight className='cursor-pointer' />
-        )}
-      </p>
-
-      {isOpen && <div className=''>{text}</div>}
+      <div className='flex justify-between'>
+        <p className='mb-2'>{title}</p>
+        <p className='icon'>
+          {isOpen ? (
+            <ChevronDown className='cursor-pointer' />
+          ) : (
+            <ChevronRight className='cursor-pointer' />
+          )}
+        </p>
+      </div>
+      <div className='text-sm'>{isOpen && <div>{text}</div>}</div>
     </div>
   );
 }
