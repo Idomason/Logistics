@@ -25,7 +25,7 @@ export default function Payment() {
 
   return (
     <section className='py-20 px-10 bg-white flex flex-col items-center justify-center'>
-      <div className='flex gap-4 md:hidden'>
+      <div className='px-10 flex gap-4 md:hidden'>
         <RectangleHorizontal
           className={` ${
             step === 1 ? 'bg-primary' : 'bg-slate-400 '

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function SellingPoint() {
   return (
-    <section className='py-20 px-10 flex flex-col items-center justify-center bg-white text-slate-700'>
+    <section className='py-10 px-10 flex flex-col items-center justify-center bg-white text-slate-700'>
       <h2 className='text-xl md:text-3xl text-black font-bold py-10'>
         Bringing You the Best in Logistics
       </h2>
@@ -11,7 +11,7 @@ export default function SellingPoint() {
         meets excellence, we deliver more than packages; we deliver satisfaction
         on every journey.
       </p>
-      <div className='py-5 text-sm md:flex items-center gap-4'>
+      <div className='py-5 text-sm md:flex items-center gap-4 text-center'>
         <div className='flex flex-col lg:flex-row items-center justify-center py-10 lg:gap-2'>
           <Image
             className='p-3 bg-gray-50 rounded-md'

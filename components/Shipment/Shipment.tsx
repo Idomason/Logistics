@@ -7,7 +7,7 @@ export default function Shipment() {
         <h2 className=' text-lg md:text-3xl text-black font-bold py-3'>
           Never Lose Sight of Your Shipments
         </h2>
-        <p className='text-xs text-gray-600 md:text-lg'>
+        <p className='text-sm text-gray-600 md:text-lg'>
           ShipPack makes it easy to create and track shipments. You can choose
           from a variety of drivers and companies to deliver your shipments
           safely and quickly.

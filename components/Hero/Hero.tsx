@@ -27,7 +27,7 @@ export default function Hero() {
             Download on Google Play
           </a>
           <a
-            className='w-max-content bg-gray-900 lg:p-4 p-3 flex items-center justify-between gap-2 rounded-md'
+            className='w-max-content bg-gray-900 lg:p-4 p-3 flex items-center justify-center gap-2 rounded-md'
             href='#'
           >
             {' '}
@@ -36,8 +36,8 @@ export default function Hero() {
               width={23}
               height={30}
               alt='Google Play logo'
-            />{' '}
-            Download on Google Play
+            />
+            Download on App Store
           </a>
         </div>
         <Image

@@ -5,35 +5,41 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer className='w-full py-20 px-10 bg-black text-white text-center flex flex-col items-center justify-center'>
-      <div className='md:w-3/4 flex flex-wrap justify-between gap-10'>
+      <div className='md:w-3/4 grid grid-cols-2 md:flex flex-wrap justify-between gap-10'>
         <div>
           <h3 className='font-bold tracking-wide mb-3'>Features</h3>
-          <div className='flex flex-col gap-1'>
-            <p>Wallet</p>
-            <p>Plans & Subscription</p>
-            <p>Shipment Mode</p>
+          <div className='flex flex-col gap-2 text-sm'>
+            <p className='hover:text-gray-400 cursor-pointer'>Wallet</p>
+            <p className='hover:text-gray-400 cursor-pointer'>
+              Plans & Subscription
+            </p>
+            <p className='hover:text-gray-400 cursor-pointer'>Shipment Mode</p>
           </div>
         </div>
         <div>
           <h3 className='font-bold tracking-wide mb-3'>Company</h3>
-          <div className='flex flex-col gap-1'>
-            <p>About Us</p>
-            <p>Support</p>
+          <div className='flex flex-col gap-2 text-sm'>
+            <p className='hover:text-gray-400 cursor-pointer'>About Us</p>
+            <p className='hover:text-gray-400 cursor-pointer'>Support</p>
           </div>
         </div>
         <div>
           <h3 className='font-bold tracking-wide mb-3'>Legal</h3>
-          <div className='flex flex-col gap-1'>
-            <p>Terms of Service</p>
-            <p>Privacy Policy</p>
+          <div className='flex flex-col gap-2 text-sm'>
+            <p className='hover:text-gray-400 cursor-pointer'>
+              Terms of Service
+            </p>
+            <p className='hover:text-gray-400 cursor-pointer'>Privacy Policy</p>
           </div>
         </div>
         <div>
           <h3 className='font-bold tracking-wide mb-3'>Contact</h3>
-          <div className='flex flex-col gap-1'>
-            <p>hello@theshippack.com</p>
-            <p>Facebook</p>
-            <p>Twitter</p>
+          <div className='flex flex-col gap-2 text-sm'>
+            <p className='hover:text-gray-400 cursor-pointer'>
+              hello@theshippack.com
+            </p>
+            <p className='hover:text-gray-400 cursor-pointer'>Facebook</p>
+            <p className='hover:text-gray-400 cursor-pointer'>Twitter</p>
           </div>
         </div>
       </div>
