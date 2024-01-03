@@ -4,11 +4,14 @@ import { ChevronDown, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
 interface AccordionData {
-  [key: string]: any;
+  title: string;
+  text: string;
 }
-// type PropDataType = AccordionData[];
+type PropDataType = {
+  [key: string]: any;
+};
 
-const faqs: AccordionData = [
+const faqs: AccordionData[] = [
   {
     title: 'What is ShipPack?',
     text: 'ShipPack is your all-in-one logistics solution, streamlining shipping, tracking, and much more, living up to the tagline "One Place, All Logistics."',
@@ -66,9 +69,9 @@ export default function Questions() {
   );
 }
 
-function Accordion({ data }: AccordionData) {
+function Accordion({ data }: PropDataType) {
   return (
-    <div className='accordion'>
+    <div>
       {data.map((el: AccordionData) => (
         <AccordionItem title={el.title} text={el.text} key={el.title} />
       ))}
